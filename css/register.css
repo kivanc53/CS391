@@ -1,0 +1,26 @@
+
+.msg{
+    color: #09cb49;
+}
+
+.reg{
+    /*padding-top: 40px;*/
+    color: #2d5cb4;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.un:focus, .pass:focus {
+    border: 2px solid rgba(0, 0, 0, 0.18) !important;
+
+}
+
+@media (max-width: 600px) {
+    .main {
+        border-radius: 0px;
+    }
+}
+
+
+
