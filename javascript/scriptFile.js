@@ -4,7 +4,7 @@ function myFunction() {
         var password = document.forms["myForm"]["Password"].value;
         var data = localStorage.getItem('data');
         var jsondata = JSON.parse(data);
-        if(jsondata === null){
+        if (jsondata === null) {
             alert("Wrong entry. Please try again :/");
             return false;
         }
@@ -19,26 +19,8 @@ function myFunction() {
         alert("Web storage is not supported on your browser.")
     }
 
-    // if(jsondata[username]){
-    //     alert("Your username and password is correct");
-    //     return jsondata[username] === password;
-    // }else{
-    //     alert("Your username and password is not correct");
-    //     return false;
-    // }
-
-    // if (username.length < X){
-    //     alert("Username length is not greater than " + X);
-    //     return false;
-    // }
-    // else if(password.length < X ){
-    //     alert("Password length is not greater than " + X);
-    //     return false;
-    // }
-    // else{
-    //     return true;
-    // }
 }
+
 function checkRegister() {
     var new_data = new Object();
     new_data.username = document.forms["myForm"]["Username"].value;
@@ -47,11 +29,11 @@ function checkRegister() {
     new_data.name = document.forms["myForm"]["name"].value;
     new_data.surname = document.forms["myForm"]["surname"].value;
     new_data.studentNo = document.forms["myForm"]["studentNo"].value;
-        if (localStorage.data) {
-            data = JSON.parse(localStorage.getItem("data"));
-        } else {
-            data = []
-        }
+    if (localStorage.data) {
+        data = JSON.parse(localStorage.getItem("data"));
+    } else {
+        data = []
+    }
     if (controlRegInfo(new_data)) {
         data.push(new_data);
         localStorage.setItem('data', JSON.stringify(data));
@@ -62,28 +44,31 @@ function checkRegister() {
         return false;
     }
 }
+
 function controlRegInfo(Object) {
     var check = localStorage.getItem("data");
     var parsed_data = JSON.parse(check);
-    if(parsed_data  === null){
+    if (parsed_data === null) {
         return true;
     }
-    for(var i = 0; i < parsed_data.length; i++){
-        if(parsed_data[i]["username"] === Object.username){
+    for (var i = 0; i < parsed_data.length; i++) {
+        if (parsed_data[i]["username"] === Object.username) {
             return false;
         }
     }
     return true;
 }
+
 function showPassword() {
     var x = document.getElementById("passwordText");
-    if ( x.type === "password"){
+    if (x.type === "password") {
         x.type = "text";
-    }else{
+    } else {
         x.type = "password";
     }
 }
-function changeToggle() {
 
+function show(temp) {
+    document.getElementById('display_zone').innerHTML = document.getElementById(temp).innerHTML;
 
 }
