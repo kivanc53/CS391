@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../javascript/scriptFile.js"></script>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/elements.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <title>HotSim</title>
+</head>
+
+<header>
+    <h1 class="hotsim" align="center">HotSim Hotel Simulation</h1>
+</header>
+
+<body class="body">
+<div class="login">
+    <p class="signmsg" align="center">Sign In</p>
+    <form class="form1" name="myForm" method="POST" action="hotelInfoPage.html" onsubmit="return myFunction()">
+        <input class="textfields" name="Username" type="text" placeholder="Enter your username" align="center" required>
+        <input class="textfields" name="Password" type="password" id="passwordText" placeholder="Enter your password"
+               align="center" required>
+        <span toggle="#passwordText" class='fa fa-fw fa-eye' onclick="showPassword()"></span>
+        <div align="center">
+            <button class="buttons" align="center" type="submit">Login</button>
+            <br>
+        </div>
+        <div id="new_register" align="center" class="newAccount">
+            <label for="newAccount" class="blackText">If you are not registered, </label>
+            <a class="newAccount" id="newAccount" href="register.html">Create an Account Now</a>
+        </div>
+    </form>
+</div>
+</body>
+
+<div class="footer">
+    <footer>
+        <p> Creators: Can Yılankıran, Gökberk Arslantaş, Kıvanç Yılmaz</p>
+        <p><a href="mailto:kader.sanligoz@ozu.edu.tr">For Contact</a></p>
+        <a href="https://www.ozyegin.edu.tr/"> Özyegin University</a>
+    </footer>
+</div>
+</html>

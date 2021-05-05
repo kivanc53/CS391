@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../javascript/scriptFile.js"></script>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/elements.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+
+<header>
+    <h1 class="hotsim" align="center">HotSim Hotel Simulation</h1>
+</header>
+
+<body class="body">
+<div class="register">
+    <h2 class="reg" align="center">Register</h2>            <!-- ? -->
+    <form class="form1" name="myForm" method="POST" action="index.html" onsubmit="return checkRegister()">
+        <input class="textfields" name="Username" type="text" placeholder="Enter your username" minlength="4"
+               maxlength="8" required>
+        <input class="textfields" name="Password" type="password" placeholder="Enter your password" required>
+        <input class="textfields" name="Email" type="email" placeholder="Enter your email" required>
+        <input class="textfields" name="name" type="text" placeholder="Enter your name" required>
+        <input class="textfields" name="surname" type="text" placeholder="Enter your surname" required>
+        <input class="textfields" name="studentNo" type="text" placeholder="Enter your student number" required>
+        <div align="center">
+            <button class="buttons" type="submit">Register</button>
+        </div>
+        <div id="login_page" align="center" class="newAccount">
+            <label for="newAccount" class="blackText">If you are already registered, </label>
+            <a class="newAccount" id="newAccount" href="index.html">Sign in</a>
+        </div>
+    </form>
+</div>
+</body>
+
+<div class="footer">
+    <footer>
+        <p> Creators: Can Yılankıran, Gökberk Arslantaş, Kıvanç Yılmaz</p>
+        <p><a href="mailto:kader.sanligoz@ozu.edu.tr">For Contact</a></p>
+        <a href="https://www.ozyegin.edu.tr/"> Özyegin University</a>
+    </footer>
+</div>
+</html>
