@@ -1,4 +1,4 @@
-body{
+.body{
     background-image: url("indir.jpg");
     /*background-color: #cccccc;*/
     font-family: 'Ubuntu', sans-serif;
@@ -7,15 +7,11 @@ body{
     background-size: cover; /* Resize the background image to cover the entire container */
 }
 
-.hotsim{
-    color: #cd1152;
-}
-
-.main {
+.login{
     background-color: #FFFFFF;
     width: 600px;
-    height: 600px;
-    margin: 7em auto;
+    height: 400px;
+    margin: 9em auto;
     border-radius: 1.5em;
     box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
 }
@@ -32,92 +28,21 @@ form.form1 {
     padding-top: 40px;
 }
 
-
-.textfields {
-    width: 75%;     /*içerisinde olduğu alanın %75 genişliği kadar genişliyor*/
-    margin-left: 75px;
-    margin-right: 75px;
-    margin-bottom: 27px;    /*alttaki eleman ile arasındaki mesafe*/
-
-    color: rgb(38, 50, 56);
-    background: rgba(85, 82, 82, 0.17);
-    padding: 10px 20px;
-    border-radius: 20px;
-    outline: none;
-    box-sizing: border-box;
-    border: 2px solid rgba(0, 0, 0, 0.02);
-
-    letter-spacing: 1px;  /*içerisindeki yazının harfleri arasındaki boşluk*/
-    text-align: center; /*içerisindeki yazıyı center ediyor*/
-    font-weight: 700;
-    font-size: 14px;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-
-
-.buttons {
-    cursor: pointer;
-    border-radius: 5em;
-
-    color: #ffffff; /* butonun içerisindeki yazının rengi*/
-    background: linear-gradient(to right, rgb(109, 133, 231), #0b23b3); /*butonun iki rengi*/
-
-    border: 0;
-    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
-
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-
-    margin-left: 40%;
-    margin-bottom: 27px;
-
-
-    font-size: 17px;
-    font-family: 'Ubuntu', sans-serif;
-
-}
-
 .newAccount {
-    width: 75%;
-    margin-left: 125px;
-    margin-right: 10px;
-    margin-bottom: 27px;
-
     text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-    color: rgba(10, 82, 210, 0.43); /*yazının rengi*/
+    color: blue; /*yazının rengi*/
+    padding-top: 10px;
+}
+
+.blackText{
     padding-top: 15px;
-}
-
-a {     /*footer ın içerisindeki rengi belirliyor*/
-    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-    color: #e01340;
-    text-decoration: none
-}
-
-
-.un:focus, .pass:focus {
-    border: 2px solid rgba(0, 0, 0, 0.18) !important;
-
-}
-
-@media (max-width: 600px) {
-    .main {
-        border-radius: 0px;
-    }
-}
-
-.footer {       /*footer alanını düzenliyor*/
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    height: 15%;
-    width: 100%;
-    background-color: darkgray;
     color: black;
-    text-align: center;
 }
 
-
+.e-input-eye:before {
+    background-size: cover;
+    background-position: center;
+    content: url("show-password.svg");
+    font-family: e-icons;
+    font-size: 13px;
+}
